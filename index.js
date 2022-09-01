@@ -15,8 +15,8 @@ while (true) {
     let number = Number(prompt("Enter the number to be converted."))
     let returned = converter(number,type)
     // check if returned value is undefined or print the result
-    if (returned == undefined) {
-        console.log("Please read the documentation next time!");
+    if (returned == undefined || returned == NaN) {
+        console.log("Please read the documentation!");
     } else {
         console.log(returned);
 
