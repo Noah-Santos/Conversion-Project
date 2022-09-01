@@ -1,12 +1,10 @@
 function converter(value, method) {
     if (method === 1) {
-        // value to binary
         return value.toString(2);
     }else if (method === 2) {
-        // value to hex
-        return null
+        return value.toString(16);
     }
-
 }
-
-console.log(converter(10,1))
+let type = Number(prompt("Do you want to do 1 (binary) or 2 (hexadecimal) conversion?"));
+let number = Number(prompt("Enter the number to be converted."))
+console.log(converter(number,type))
