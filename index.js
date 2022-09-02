@@ -25,7 +25,6 @@ while (true) {
         console.log(returned);
 
     }
-<<<<<<< Updated upstream
 }
 //converts the user's number into binary with 8 digits
 let numbers = Number(prompt("Enter the number"));
@@ -41,6 +40,3 @@ function convert(numb){
     }
 }
 alert(convert(result));
-=======
-}
->>>>>>> Stashed changes
