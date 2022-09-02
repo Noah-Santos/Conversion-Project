@@ -9,10 +9,14 @@ function converter(value, method) {
     }
 }
 
+//function to run both prompts
+function call(){
+    let type = Number(prompt("Do you want to do 1. binary or 2. hexadecimal conversion?"));
+    let number = Number(prompt("Enter the number to be converted."));
+}  
 // normal
 while (true) {
-    let type = Number(prompt("Do you want to do 1. binary or 2. hexadecimal conversion?"));
-    let number = Number(prompt("Enter the number to be converted."))
+    call()
     let returned = converter(number,type)
     // check if returned value is undefined or print the result
     if (returned == undefined || returned == NaN) {
