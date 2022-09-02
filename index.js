@@ -22,3 +22,17 @@ while (true) {
 
     }
 }
+//converts the user's number into binary with 8 digits
+let numbers = Number(prompt("Enter the number"));
+let result = numbers.toString(2);
+result = String(result);
+function convert(numb){
+    let num = numb;
+    while(num.length <9){
+        num = "0" + num;
+        if(num.length == 8){
+        return num;
+        }
+    }
+}
+alert(convert(result));
